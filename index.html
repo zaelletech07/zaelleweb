@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- On utilise UTF-8 pour supporter tous les caractères (accents, symboles) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet à la page de s’adapter aux téléphones et différents écrans -->
+
+    <title>Calculatrice simple</title>
+     <link rel="stylesheet" href="style.css"> <!-- On relie le fichier CSS pour gérer le design -->
+</head>
+<body>
+    <!-- Conteneur principal de la calculatrice--> 
+         <div class="calculator"> 
+            <h2> CIN101 Calculatrice </h2> <!-- Titre pour indiquer clairement le rôle de l’application -->
+            <input id="display" readonly> <!-- Champ d’affichage en lecture seule pour éviter que l’utilisateur tape directement -->
+            <div class="keys">   <!-- Zone qui contient tous les boutons -->
+                <!-- Boutons numériques -->
+                <button onclick="insert('7')">7</button> 
+                <button onclick="insert('8')">8</button> 
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('+')" class="operator-btn">+</button> <!-- Boutons opérateurs : on utilise insert pour ajouter les signes -->
+                <button onclick="insert('4')">4</button> 
+                <button onclick="insert('5')">5</button> 
+                <button onclick="insert('6')">6</button> 
+                <button onclick="insert('-')" class="operator-btn">-</button> 
+                <button onclick="insert('1')">1</button> 
+                <button onclick="insert('2')">2</button> 
+                <button onclick="insert('3')">3</button> 
+                <button onclick="insert('*')" class="operator-btn">x</button>  
+                <button onclick="insert('0')">0</button> 
+                <button onclick="insert('.')">.</button> 
+                <button onclick="toggleSign('+/-')">+/-</button> <!-- Bouton pour changer le signe du nombre -->
+                <button onclick="insert('/')" class="operator-btn">/</button>
+                <button onclick="clearDisplay()" class="operator-btn">C</button> <!-- Bouton pour effacer complètement l’écran -->
+                <button onclick="Del()" class="operator-btn">Del</button> <!-- Bouton pour supprimer le dernier caractère -->
+                <button onclick="RC()" class="operator-btn">√</button>  <!-- Bouton racine carrée ajouté -->
+                <button onclick="calculate()" class="equal-btn">=</button> <!-- Bouton pour lancer le calcul -->
+            </div> 
+         </div> 
+         <script src="script.js"></script>  <!-- On relie le fichier JavaScript pour la logique -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+body{ 
+    background: hwb(204 88% 4%);  /* On met un fond clair pour créer un contraste avec la calculatrice */
+    margin: 0; 
+     /* Flexbox pour centrer la calculatrice */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+} 
+ 
+h2 {   /* Style du titre pour qu’il soit visible sur fond sombre */
+  color: #f5f1f0; 
+  margin-bottom: 10px; 
+} 
+ 
+button{  /* Style des boutons */
+    /* transforme le bouton en cercle */
+    border-radius: 50%;
+    width: 65px;
+    height: 60px; 
+    border: none;  
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer; 
+} 
+ 
+.keys{ /* Organisation des boutons en grille */
+    display: grid; 
+    grid-template-columns: repeat(4,68px); 
+    gap: 10px; 
+} 
+ 
+.calculator{  /* Style global de la calculatrice */
+    font-family: Calibri, Bebas Neu; 
+    font-size: 20px;
+    text-align: center; 
+    background: hsl(0, 0%, 15%);  /* Fond sombre pour améliorer la lisibilité */
+    border-radius: 15px; 
+    width: 300px; 
+    padding: 40px; 
+    
+} 
+ 
+#display{ 
+    width: 88%; 
+    background: hsl(0, 0%, 20%); 
+    border-radius: 8px; 
+    border-color:rgb(240, 228, 228); 
+    padding: 10px; 
+    text-align: right; 
+    margin-bottom: 15px; 
+    font-size: 3rem; 
+    color: white; 
+    overflow: hidden; 
+    box-shadow: 0px 4px 15px rgba(4, 32, 212, 0.9)  /* Ombre pour donner un effet de profondeur */
+} 
+ 
+button:hover{ /* Effet au survol */
+    background: hsl(0, 0%, 64%); 
+} 
+ 
+button:active{ /* Effet au clic */
+    background: hsl(0, 0%, 37%); 
+} 
+ 
+.operator-btn{  /* Couleur des opérateurs pour les différencier */
+    background: hsl(158, 88%, 70%); 
+} 
+ 
+.operator-btn:hover{  /* Effet hover pour opérateurs */
+background: rgb(3, 149, 135); 
+} 
+ 
+.equal-btn{  /* Bouton égal plus large pour le mettre en évidence */
+    padding: 15px; 
+    border-radius: 100%;  
+    background-color: rgb(5, 29, 245); 
+} 
+ 
+.equal-btn:hover{ 
+    background: rgb(82, 61, 241); 
+}
