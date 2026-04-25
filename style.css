@@ -9,18 +9,18 @@ body{
 } 
  
 h2 {   /* Style du titre pour qu’il soit visible sur fond sombre */
-  color: #f5f1f0; 
-  margin-bottom: 10px; 
+  color: #f5f1f0; /*Donner une couleur au titre */
+  margin-bottom: 10px;  
 } 
  
 button{  /* Style des boutons */
-    /* transforme le bouton en cercle */
+    /* permet transforme le bouton en cercle */
     border-radius: 50%;
     width: 65px;
     height: 60px; 
     border: none;  
-    font-size: 18px; 
-    font-weight: bold; 
+    font-size: 18px; /*permet de donner une taille au contenu de chaque bouton*/
+    font-weight: bold; /*pour mettre en gras*/
     cursor: pointer; 
 } 
  
@@ -31,27 +31,27 @@ button{  /* Style des boutons */
 } 
  
 .calculator{  /* Style global de la calculatrice */
-    font-family: Calibri, Bebas Neu; 
-    font-size: 20px;
-    text-align: center; 
+    font-family: Calibri, Bebas Neu; /* choisir l'ecriture soit l'une ou l'autre*/
+    font-size: 20px;/*pour donner une dimension à l'ecriture*/
+    text-align: center; /*Centrer le texte*/
     background: hsl(0, 0%, 15%);  /* Fond sombre pour améliorer la lisibilité */
-    border-radius: 15px; 
-    width: 300px; 
-    padding: 40px; 
+    border-radius: 20px; /*arrondir les bordure pour donner plus de style*/
+    width: 300px; /*Pour la largeur de la calculatrice*/
+    padding: 40px; /*Pour la hauteur*/
     
 } 
  
 #display{ 
-    width: 88%; 
-    background: hsl(0, 25%, 98%); 
-    border-radius: 8px; 
-    border-color:rgb(240, 228, 228); 
-    padding: 10px; 
-    text-align: right; 
-    margin-bottom: 15px; 
-    font-size: 3rem; 
-    color: white; 
-    overflow: hidden; 
+    width: 88%; /*pour ajuster la largeur du diplay*/
+    background: hsl(0, 25%, 98%); /*pour donner une couleur à l'arrière plan pour que le contenu soit lisible*/
+    border-radius: 8px; /*arrondir les bordure*/
+    border-color:rgb(240, 228, 228); /*pour donner une couleur au contour*/ 
+    padding: 10px; /*on l'utilise pour ajouter de l'espace à l'interieur*/
+    text-align: right; /*lorsque qu'on tape une calcul, elle sort de la droite vers la gauche*/ 
+    margin-bottom: 15px; /*utilisé pour ajouter de l'espace en dessous de l'element*/
+    font-size: 3rem; /*la taille de l'ecriture sur l'ecran*/
+    color: black; /*la couleur du texte*/
+    overflow: hidden; /*empecher aux chiffres de depasser l'ecran pour garder une interface propre et lisible*/
     box-shadow: 0px 4px 15px rgba(13, 2, 226, 0.5)  /* Ombre pour donner un effet de profondeur */
 } 
  
@@ -59,7 +59,7 @@ button:hover{ /* Effet au survol */
     background: hsl(0, 0%, 64%); 
 } 
  
-button:active{ /* Effet au clic */
+button:active{ /* pour donner une couleur au bouton*/
     background: hsl(0, 0%, 37%); 
 } 
  
@@ -79,6 +79,6 @@ background: rgb(3, 149, 135);
     font-size: 20px;
 } 
  
-.equal-btn:hover{ 
+.equal-btn:hover{ /* Effet au clic */
     background: rgb(5, 61, 241); 
 }
