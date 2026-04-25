@@ -46,14 +46,13 @@ button{  /* Style des boutons */
     width: 88%; /*pour ajuster la largeur du diplay*/
     background: hsl(0, 25%, 98%); /*pour donner une couleur à l'arrière plan pour que le contenu soit lisible*/
     border-radius: 8px; /*arrondir les bordure*/
-    border-color:rgb(240, 228, 228); /*pour donner une couleur au contour*/ 
+    border-color:rgb(6, 2, 85); /*pour donner une couleur au contour*/ 
     padding: 10px; /*on l'utilise pour ajouter de l'espace à l'interieur*/
     text-align: right; /*lorsque qu'on tape une calcul, elle sort de la droite vers la gauche*/ 
     margin-bottom: 15px; /*utilisé pour ajouter de l'espace en dessous de l'element*/
     font-size: 3rem; /*la taille de l'ecriture sur l'ecran*/
     color: black; /*la couleur du texte*/
     overflow: hidden; /*empecher aux chiffres de depasser l'ecran pour garder une interface propre et lisible*/
-    box-shadow: 0px 4px 15px rgba(13, 2, 226, 0.5)  /* Ombre pour donner un effet de profondeur */
 } 
  
 button:hover{ /* Effet au survol */
