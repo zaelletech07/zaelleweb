@@ -2,7 +2,7 @@ const display = document.getElementById("display"); // On récupère l’éléme
  
 // Fonction pour ajouter un nombre ou un opérateur
 function insert(input){ 
-    // On ajoute la valeur sans effacer ce qui est déjà affiché
+    // pour ajouter une valeur sans effacer ce qui est déjà affiché
     display.value += input; 
 } 
  // Fonction pour effacer tout l’écran
@@ -11,7 +11,7 @@ function clearDisplay(){
 } 
  // Fonction pour changer le signe du nombre
 function toggleSign(){ 
-    // On multiplie par -1 pour inverser le signe
+    // pour multiplie par -1 pour inverser le signe
     display.value = - display.value; 
 } 
  // Fonction pour supprimer le dernier caractère
@@ -26,22 +26,22 @@ function calculate(){
         display.value = eval(display.value) 
     } 
     catch(error){ 
-         // En cas d’erreur (ex: expression invalide)
+         // En cas d’erreur pour faire comprendre à l'utilisateur qu'il y a une erreur de saisie
         display.value = "Error"; 
-        // On efface après un court délai pour permettre à l’utilisateur de recommencer
+        // pour effacer après un court délai pour permettre à l’utilisateur de recommencer
         setTimeout(clearDisplay, 1500); 
     } 
 } 
 // Fonction racine carrée
 function RC(){
-      // Conversion en nombre pour permettre le calcul
+      // Conversion en nombre, pour permettre de calculer la racine carrée d'un nombre
     let value = parseFloat(display.value);
 
-     // Si aucune valeur valide, on affiche un message
+     // Si aucune valeur valide, on affiche un message d'erreur
     if(isNaN(value)){
         display.value = "Error";
     }
-    // On empêche la racine carrée des nombres négatifs
+    // pour empêcher la racine carrée des nombres négatifs
     else if(value< 0){
         display.value = "Error"; 
     } 
