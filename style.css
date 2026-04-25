@@ -22,6 +22,7 @@ button{  /* Style des boutons */
     font-size: 18px; /*permet de donner une taille au contenu de chaque bouton*/
     font-weight: bold; /*pour mettre en gras*/
     cursor: pointer; 
+    color: black;
 } 
  
 .keys{ /* Organisation des boutons en grille */
@@ -64,11 +65,11 @@ button:active{ /* pour donner une couleur au bouton*/
 } 
  
 .operator-btn{  /* Couleur des opérateurs pour les différencier */
-    background: hsl(158, 88%, 70%); 
+    background: hsl(1ç5, 71%, 52%); 
 } 
  
 .operator-btn:hover{  /* Effet hover pour opérateurs */
-background: rgb(3, 149, 135); 
+background: rgb(2, 64, 131); 
 } 
  
 .equal-btn{  /* Bouton égal plus large pour le mettre en évidence */
