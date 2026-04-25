@@ -43,7 +43,7 @@ button{  /* Style des boutons */
  
 #display{ 
     width: 88%; 
-    background: hsl(0, 0%, 20%); 
+    background: hsl(0, 25%, 98%); 
     border-radius: 8px; 
     border-color:rgb(240, 228, 228); 
     padding: 10px; 
@@ -52,7 +52,7 @@ button{  /* Style des boutons */
     font-size: 3rem; 
     color: white; 
     overflow: hidden; 
-    box-shadow: 0px 4px 15px rgba(4, 32, 212, 0.9)  /* Ombre pour donner un effet de profondeur */
+    box-shadow: 0px 4px 15px rgba(13, 2, 226, 0.9)  /* Ombre pour donner un effet de profondeur */
 } 
  
 button:hover{ /* Effet au survol */
@@ -74,9 +74,11 @@ background: rgb(3, 149, 135);
 .equal-btn{  /* Bouton égal plus large pour le mettre en évidence */
     padding: 15px; 
     border-radius: 100%;  
-    background-color: rgb(5, 29, 245); 
+    background-color: rgb(4, 20, 75); 
+    color: white;
+    font-size: 20px;
 } 
  
 .equal-btn:hover{ 
-    background: rgb(82, 61, 241); 
+    background: rgb(5, 61, 241); 
 }
